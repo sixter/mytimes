@@ -1,0 +1,74 @@
+body {
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: thin solid black;
+  padding-bottom: 3px;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  margin: 0px;
+  height: 60px;
+}
+
+.name {
+  display: inline-flex;
+  align-items: center;
+  width: 25%;
+}
+
+#name {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  color: MediumAquamarine;
+  margin-left: 10px;
+}
+
+.tabs {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.content {
+  display: inline-flex;
+  z-index: 1;
+  position: relative;
+  justify-content: space-between;
+  top: 63px;
+  width:1200px;
+  font-style: Times;
+}
+
+.column {
+  border: thin solid black;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.article {
+  border: thin solid;
+}
+
+.article.tofu {
+  background-image: url("../images/img-story-main.png");
+}
