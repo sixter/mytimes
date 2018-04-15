@@ -36,7 +36,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   justify-content: space-around;
-  width: 40%;
+  width: 300px;
 }
 
 .content {
@@ -44,17 +44,23 @@ body {
   z-index: 1;
   position: relative;
   justify-content: space-between;
-  top: 63px;
-  width:1200px;
-  font-style: Times;
+  top: 73px;
+  width:1260px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
 .column {
-  border: thin solid black;
 }
 
 .column.large {
+  display: flex;
   width: 630px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  flex-direction: center;
+  justify-content: space-between;
 }
 
 .column.medium {
@@ -65,10 +71,100 @@ body {
   width: 240px;
 }
 
-.article {
-  border: thin solid;
+.article.column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: center;
+  width: 310px;
 }
 
-.article.tofu {
+.article.text {
+  padding-bottom: 30px;
+}
+
+.article.image {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.newsbites {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsbites a {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: thin solid black;
+  padding: 10px;
+}
+
+#tofu {
   background-image: url("../images/img-story-main.png");
+  height: 300px;
+  font-size: 40px;
+  text-align: left;
+}
+
+#girl {
+  background-image: url("../images/img-story-2.png");
+  height: 300px;
+}
+
+#camera {
+  background-image: url("../images/img-story-3.png");
+  height: 300px;
+}
+
+#cat {
+  background-image: url("../images/img-story-1.png");
+  height: 300px;
+}
+
+#newsbitetitle {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  top: 120px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 200px;
+}
+
+#footername {
+  padding-right: 30px;
+  color: white;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#footertabs {
+  display: inline-flex;
+  width: 200px;
+  justify-content: space-between;
+  font-weight: normal;
+}
+
+.footer .tabs {
+  display: inline-flex;
+  width: 350px;
+  justify-content: space-between;
+  margin: 30px;
 }
